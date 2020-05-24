@@ -95,6 +95,7 @@ if ARGV[0] == 'undo'
 
   puts "removing scripts:\n#{added_scripts}\n\n"
   added_scripts.each do |file|
+    next if File.basename(file) == "survival_shapes.lua"
     delete_file file
   end
 

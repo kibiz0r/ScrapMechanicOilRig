@@ -3,7 +3,7 @@ Adding an oil rig to Scrap Mechanic
 
 ## About
 
-This mod adds a new variant of the Vacuum Pump, which exclusively pumps oil.
+This mod adds a new variant of the Vacuum Pump, which exclusively pumps oil. (Other mods just *extend* the pump, making it so that you have to deal with all of the excess water!)
 
 Find it in the Craftbot, under Interactive. The icon looks identical to a Vacuum Pump, but the model itself will be black-ish.
 

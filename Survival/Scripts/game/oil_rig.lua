@@ -1,0 +1,1 @@
+obj_oil_pump = sm.uuid.new( "83cec93c-530b-47da-b270-66f912bd9801" )

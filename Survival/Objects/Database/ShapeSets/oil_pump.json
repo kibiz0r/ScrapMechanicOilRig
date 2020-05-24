@@ -1,0 +1,41 @@
+{
+	"partList": [
+		{
+			"uuid": "83cec93c-530b-47da-b270-66f912bd9801",
+			"name": "obj_oil_pump",
+			"renderable": "$SURVIVAL_DATA/Objects/Renderable/vacuumpipe/obj_vacuumpipe_pipepump.rend",
+			"color": "242424",
+			"hull": {
+				"x": 3,
+				"y": 4,
+				"z": 3,
+				"col": "$SURVIVAL_DATA/Objects/Collision/obj_pneumatic_pump.obj"
+			},
+			"scripted": {
+				"filename": "$SURVIVAL_DATA/Scripts/game/interactables/OilPump.lua",
+				"classname": "OilPump"
+			},
+			"rotationSet": "PropNegYmZX",
+			"sticky": "+Y+Z-Z+X-X",
+			"physicsMaterial": "Metal",
+			"ratings": {
+				"density": 5,
+				"durability": 7,
+				"friction": 5,
+				"buoyancy": 7
+			},
+			"flammable": false,
+			"density": 250.0,
+			"pipe": {
+				"openings": [
+					{
+						"side": "+Y",
+						"x": 0,
+						"y": 2.0,
+						"z": 0
+					}
+				]
+			}
+		}
+	]
+}

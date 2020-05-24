@@ -20,7 +20,7 @@
 			"physicsMaterial": "Metal",
 			"ratings": {
 				"density": 5,
-				"durability": 7,
+				"durability": 2,
 				"friction": 5,
 				"buoyancy": 7
 			},

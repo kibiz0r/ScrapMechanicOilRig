@@ -74,8 +74,10 @@ def delete_file(file)
   target_file = Pathname.new(CurrentScrapMechanic).join target_relative_path
   target_dir = File.dirname target_file
 
-  puts "  rm #{target_file}"
-  FileUtils.rm target_file
+  if File.exists? target_file
+    puts "  rm #{target_file}"
+    FileUtils.rm target_file
+  end
 
   if Dir.empty? target_dir
     puts "  rmdir #{target_dir}"
@@ -88,7 +90,7 @@ def write_file(file, content)
   File.write file, content
 end
 
-if ARGV[1] == 'undo'
+if ARGV[0] == 'undo'
   puts "undoing mod\n\n"
 
   puts "removing scripts:\n#{added_scripts}\n\n"
@@ -109,7 +111,7 @@ if ARGV[1] == 'undo'
       current_recipe["itemId"] == added_recipe["itemId"]
     end
     if rejecting
-      puts "removing recipe:\n#{added_recipe["itemId"]}"
+      puts "removing recipe:\n#{current_recipe["itemId"]}"
     end
     rejecting
   end

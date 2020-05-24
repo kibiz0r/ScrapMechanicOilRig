@@ -19,6 +19,8 @@ Run `ruby apply_mod.rb` to install it.
 
 `ruby apply_mod.rb undo` will uninstall it to the best of its ability, but there may be some crud left over. As of writing this, the only leftover should be the icon map, which shouldn't hurt anything.
 
+As always, the most reliable way to uninstall survival mods is to go to Steam => Scrap Mechanic => Properties => Local Files => Verify Integrity.
+
 ### Warning!
 
 If you have an oil pump in your world, you must remove it before uninstalling the mod, or your world will fail to load!
